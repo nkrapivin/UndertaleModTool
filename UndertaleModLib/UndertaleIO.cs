@@ -193,10 +193,7 @@ namespace UndertaleModLib
         // TODO: This would be more useful if it reported location like the exceptions did
         public void SubmitWarning(string warning)
         {
-            if (WarningHandler != null)
-                WarningHandler.Invoke(warning);
-            else
-                throw new IOException(warning);
+            //
         }
 
         public void SubmitMessage(string message)
